@@ -1,9 +1,17 @@
 # -*- coding: utf-8 -*-
 """
-Created on Fri Mar  8 10:17:10 2019
+Created on Fri Mar 15 09:55:51 2019
 
-@author: Jacob Arcila Cardenas
+@author: Estudiante
 """
+
+# -*- coding: utf-8 -*-
+"""
+Editor de Spyder
+
+Este es un archivo temporal
+"""
+
 import seaborn as sns
 import matplotlib.pyplot as plt
 import pandas as pd
@@ -38,3 +46,13 @@ plt.scatter(x = columnas[:,0], y = columnas[:,1], c = etiquetas)
 plt.show()
 jc = [(datos['pais'][id], etiquetas[id]) for id in range(0, len(etiquetas))
         if etiquetas[id] == 2]
+##-----------------------
+etiqueta0=[(datos['pais'][id], etiquetas[id]) for id in range(0, len(etiquetas))
+        if etiquetas[id] == 0]
+print("Cantidad de paises en la etiqueta 0:",len(etiqueta0))
+etiqueta1=[(datos['pais'][id], etiquetas[id]) for id in range(0, len(etiquetas))
+        if etiquetas[id] == 1]
+print("Cantidad de paises en la etiqueta 1:",len(etiqueta1))
+etiqueta2=[(datos['pais'][id], etiquetas[id]) for id in range(0, len(etiquetas))
+        if etiquetas[id] == 2]
+print("Cantidad de paises en la etiqueta 2:",len(etiqueta2))
